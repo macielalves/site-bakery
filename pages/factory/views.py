@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+
 # Classe de exemplo para usuários
 class User:
     def __init__(self):
@@ -19,4 +20,10 @@ def main(request):
             request,
             'factory/index.html'
         )
+    teste = 'Isso é um teste'
+    titulo = f'{__name__}'
+    context = {
+        'text': teste,
+        'title': titulo
+    }
     return HttpResponse('Voçê ainda não é usuário! <a href="/login">Fazer Cadastro</a>')

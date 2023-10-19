@@ -11,7 +11,12 @@
 <body>
 <h1>Home</h1>
 {% include 'global/home.html' %}
+{% include 'global/partials/menu/nav0.html' %}
 <h2>{% block texto %}{{ text }}{% endblock %}</h2>
-{% for i in 'Paralelepipedo' %}{% include 'global/partials/cards/card0.html' %}{% endfor %}
+{% for i in '1234' %}{# Linhas #}
+    {% for j in '123' %}{# Colunas #}
+        {% include 'global/partials/cards/card0.html' %}
+    {% endfor %}<br/>
+{% endfor %} {# Desconsiderar essa formatação #}
 </body>
 </html>
