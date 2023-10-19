@@ -1,11 +1,15 @@
+{#load static é necessario para rodar css, js, imagens, etc#}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FactoryPage</title>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static '/home/css/main.styles.css' %}">
 </head>
-<body bgcolor="#051d41" text="#f0f8ff">
-{#Faz os bagulho da pagina principal aqui#}
+<body>
 <h1>Home</h1>
+{% include 'global/home.html' %}
+{% block texto %}{{ text }}{% endblock %}
 </body>
 </html>

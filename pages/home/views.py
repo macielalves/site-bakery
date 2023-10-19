@@ -2,7 +2,11 @@ from django.shortcuts import render
 
 
 def main(request):
+    teste = 'Isso é um teste'
     return render(
         request,
-        'index.html'
+        'index.html',
+        {
+            'text': teste
+        }
     )
