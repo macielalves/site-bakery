@@ -6,10 +6,12 @@
     <meta charset="UTF-8">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{% static '/home/css/main.styles.css' %}">
+    <link rel="stylesheet" href="{% static 'cards/css/card0.css' %}">
 </head>
 <body>
 <h1>Home</h1>
 {% include 'global/home.html' %}
-{% block texto %}{{ text }}{% endblock %}
+<h2>{% block texto %}{{ text }}{% endblock %}</h2>
+{% for i in 'Paralelepipedo' %}{% include 'global/partials/cards/card0.html' %}{% endfor %}
 </body>
 </html>
