@@ -3,3 +3,4 @@
 ### Colaboradores
 * Maciel Alves
 * Breno Ruan 
+* Samuel Alves
