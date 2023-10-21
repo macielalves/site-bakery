@@ -1,22 +1,17 @@
-{#load static é necessario para rodar css, js, imagens, etc#}
 {% load static %}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{% static '/home/css/main.styles.css' %}">
-    <link rel="stylesheet" href="{% static 'cards/css/card0.css' %}">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/global.styles.css' %}">
+<!--<link rel="stylesheet" href="{% static 'home/css/main.styles.css' %}"> -->
+    <title>Site Bakery</title>
 </head>
 <body>
-<h1>Home</h1>
-{% include 'global/home.html' %}
 {% include 'global/partials/menu/nav0.html' %}
-<h2>{% block texto %}{{ text }}{% endblock %}</h2>
-{% for i in '1234' %}{# Linhas #}
-    {% for j in '123' %}{# Colunas #}
-        {% include 'global/partials/cards/card0.html' %}
-    {% endfor %}<br/>
-{% endfor %} {# Desconsiderar essa formatação #}
+<img src="{% static 'img/folder_1.png' %}" alt="File">
 </body>
 </html>
