@@ -2,10 +2,13 @@ from django.shortcuts import render
 
 
 def main(request):
+    a = [x for x in range(3)]
+    print(a)
     titulo = f"Site Bakery"
     context = {
         "title": titulo,
-        "alt": "Folder 1"
+        "alt": "Folder 1",
+        "lista": a
     }
     return render(request, "index.html", context)
 
@@ -22,5 +25,5 @@ def catalogo(request, id):
 def hello(request):
     return render(
             request,
-            "hello.html"
+            "hello.html",
         )

@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "hnf-pr";
+    src:
+      local("fonts/"),
+      url("fonts/Hack\ Regular\ Nerd\ Font.ttf") format("opentype")
+}
+
 body {
     background: #e0e0e0;
 }
