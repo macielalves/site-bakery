@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% include "global/partials/html/index.html" %}
+{% load static %}
+{% block head %}
     <title>Building Page</title>
-</head>
-<body>
-<h1>Pagina para o usuári autenticado editar seus sites</h1>
+{% endblock head %}
+{% block body %}
 <main>
     <header>
         <nav></nav>
     </header>
     <div class="container">
         <div class="nav-left">Left</div>
-        <div class="editor">Middle</div>
+        <div id="editor">Middle</div>
         <div class="nav-right">Right</div>
     </div>
 </main>
-</body>
-</html>
+{% endblock body %}
