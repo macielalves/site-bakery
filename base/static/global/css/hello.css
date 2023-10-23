@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(#EDE0D4, #E6CCB2, #DDB892);
+  padding: 0 28px;
+  color: #FFF;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hello-container {
+    flex: 1;
+    padding: 100px;
+}
+
+.image-container {
+    flex: 1;
+	max-width: 50%;
+}

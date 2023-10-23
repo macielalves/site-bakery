@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-def main(request):
+def login(request):
     return render(
         request,
         'login/index.html'

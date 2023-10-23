@@ -1,17 +1,14 @@
+{% extends 'global/partials/html/index.html' %}
 {% load static %}
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'css/global.styles.css' %}">
+{% block head %}
+    <link rel="stylesheet" href="{% static 'global/css/global.styles.css' %}">
 <!--<link rel="stylesheet" href="{% static 'home/css/main.styles.css' %}"> -->
-    <title>Site Bakery</title>
-</head>
-<body>
-{% include 'global/partials/menu/nav0.html' %}
-<img src="{% static 'img/folder_1.png' %}" alt="File">
-</body>
-</html>
+    <title>{{ title }}</title>
+{% endblock %}
+{% block body %}
+    {% include 'global/partials/menu/nav0.html' %}
+    {% include 'global/partials/img/img0.html' %}
+    {% include 'global/partials/img/img0.html' %}
+    {% include 'global/partials/img/img0.html' %}
+    {% include 'global/partials/img/img0.html' %}
+    {% include 'global/partials/img/img0.html' %}{% endblock %}

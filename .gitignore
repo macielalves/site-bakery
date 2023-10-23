@@ -1,6 +1,8 @@
 # ignore .idea in Pycharm
 .idea
 
+/base/static/bootstrap*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

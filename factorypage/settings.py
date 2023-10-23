@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'pages.legal',
     'pages.login',
     'pages.suport',
+    'pages.cadastro',
 ]
 
 MIDDLEWARE = [
@@ -135,8 +136,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'base' / 'static/',
-    BASE_DIR / 'base' / 'global' / 'static/'
+    BASE_DIR / 'base' / 'static',
 
 ]
 

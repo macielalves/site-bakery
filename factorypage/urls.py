@@ -26,5 +26,6 @@ urlpatterns = [
     path('suport/', include('pages.suport.urls')),
     path('legal/', include('pages.legal.urls')),
     path('factory/', include('pages.factory.urls')),
+    path('cadastro/', include('pages.cadastro.urls')),
 ]
 

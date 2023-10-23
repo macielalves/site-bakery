@@ -1,0 +1,10 @@
+{% extends 'global/partials/html/index.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/global.styles.css' %}">
+<!--<link rel="stylesheet" href="{% static 'home/css/main.styles.css' %}"> -->
+    <title>{{ id }}</title>
+{% endblock %}
+{% block body %}
+ <img src="{% static 'global/img/folder_1.png' %}" alt="{{ alt }}">
+{% endblock %}

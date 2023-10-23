@@ -1,0 +1,23 @@
+{% extends "global/partials/html/index.html" %}
+{% load static %}
+{% block head %}
+<meta charset="UTF-8">
+<title>Hello</title>
+<link rel="stylesheet" type="text/css" href="{% static "global/css/hello.css" %}">
+{% endblock head %}
+{% block body %}
+<div class="hello-container">
+    <main>
+        <form action="" method="post">
+            <header class="head-form">
+                <h1>BEM VINDO AO <br> SITE BAKERY</h1>
+            </header>
+            <button type="button" onclick="window.location.href='{% url "login" %}'">Entrar</button>
+            <button type="button" onclick="window.location.href='{% url "cadastro" %}'">Cadastre-se</button>
+        </form>
+    </main>
+</div>
+<div class="image-container">
+    <img src="C:\Users\evand\3D Objects\site-bakery-main\exemplosites.gif">
+</div>
+{% endblock body %}

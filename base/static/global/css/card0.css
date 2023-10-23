@@ -1,0 +1,15 @@
+.card0 {
+    display: inline-block;
+    padding: 5px;
+    background: #1f1f1f linear-gradient(45deg, #1f1f1f, #383838);
+    width: 100px;
+    height: 70px;
+    border-radius: 5px;
+    color: #bbb8cb;
+}
+
+.card0 > header {
+    font-family: 'Consolas', monospace;
+    font-size: 24px;
+    font-weight: bold;
+}

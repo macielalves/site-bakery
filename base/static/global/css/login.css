@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "hnf-pr";
+    src:
+      local("fonts/"),
+      url("fonts/Hack\ Regular\ Nerd\ Font.ttf") format("opentype")
+  }
+
+:root {
+    --hnf-rp: "hnf-pr";
+}    
+
+html,body {
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(#EDE0D4, #E6CCB2, #DDB892) no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+
+h1 {
+    font-family: var(--hnf-rp);
+    text-align: center;
+    color: #fa2e2e;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+}
+
+label {
+    font-family: var(--hnf-rp);
+}
+
+.login-container {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45%;
+    background-color: #1d1a1f;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.0rem;
+    border-radius: 10px;
+}
+
+.login-with {
+    text-align: center;
+}
+
+.login-with>.with-google {
+    display: inline-block;
+    font-family: var(--hnf-rp);
+    font-size: 4rem;
+    color: #d11b1b;
+    text-decoration: none;
+    clip-path: fill-box;
+}
+
+.login-with>.with-google:hover {
+    color: #e41f1f;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+button:hover {
+    background-color: #c2000091;
+}
+
+button:active {
+    background-color: #d60000d2;
+}
+
+input[type="email"],
+input[type="password"] {
+    background-color: #242424;
+    border: none;
+    color: #fff;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    height: 3rem;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background-color: #242424;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover {
+    background-color: #2e2e2e;
+    outline: none;
+    box-shadow: 0 0 4px #cccccc;
+}
+
+.image-container {
+	max-width: 50%;
+}
+
+.ad {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-img {
+    flex: 1 1 60%;
+    background: no-repeat;
+    background-image: url("img/exemplosites.gif");
+    background-size: contain;
+    background-position: center;
+}
+
+.ad-content {
+    flex: 1 1 40%;
+    color: #1b1b1b;
+    background: whitesmoke;
+    padding: 1.5rem 1rem;
+    & h1 {
+        font-family: var(--hnf-rp);
+        color: inherit;
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .login-container {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    
+    .ad {
+        display: none;
+    }
+}

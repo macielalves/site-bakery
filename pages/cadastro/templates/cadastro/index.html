@@ -1,0 +1,28 @@
+{% extends "global/partials/html/index.html" %}
+{% load static %}
+{% block head %}
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static "global/css/cadastro.css" %}">
+{% endblock head %}
+{% block body %}
+<div class="cadastro-container">
+    <main>
+        <form action="" method="post">
+            <header class="head-form">
+                <h1>Criar usuário</h1>
+            </header>
+            <label for="in-username" class="lb-username">Nome de Usuário:</label>
+            <input id="in-username" type="text" name="nome" size="20" maxlenght="40" placeholder="Nome de usuário"/>
+            <br/>
+            <label for="in-email" class="lb-email">E-mail:</label>
+            <input id="in-email" type="email" placeholder="Insira um e-mail váliddo"/>
+            <br/>
+            <label for="in-passwd" class="lb-password">Senha:</label>
+            <input id="in-passwd" type="password" placeholder="Insira sua senha"/>
+            <br/>
+            <button type="submit">Entrar</button>
+	        <button type="reset" name="btn_limpar">Limpar Dados</button>
+        </form>
+    </main>
+</div>
+{% endblock body %}
