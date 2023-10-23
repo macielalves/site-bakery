@@ -3,7 +3,7 @@
 {% block head %}
 <meta charset="UTF-8">
 <title>Hello</title>
-<link rel="stylesheet" type="text/css" href="{% static "global/css/hello.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "home/css/hello.css" %}">
 {% endblock head %}
 {% block body %}
 <div class="hello-container">
@@ -18,6 +18,6 @@
     </main>
 </div>
 <div class="image-container">
-    <img src="C:\Users\evand\3D Objects\site-bakery-main\exemplosites.gif">
+    <img src="{% static "login/css/img/exemplosites.gif" %}">
 </div>
 {% endblock body %}
