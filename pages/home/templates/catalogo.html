@@ -3,8 +3,10 @@
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/global.styles.css' %}">
 <!--<link rel="stylesheet" href="{% static 'home/css/main.styles.css' %}"> -->
-    <title>{{ id }}</title>
+    <title>{{ id_ }}</title>
 {% endblock %}
 {% block body %}
- <img src="{% static 'global/img/folder_1.png' %}" alt="{{ alt }}">
+{% if True %}
+    <img src="{% static 'global/img/folder_1.png' %}" alt="{{ alt }}" width="20px" height="18px">
+{% endif %}
 {% endblock %}

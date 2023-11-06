@@ -1,6 +1,11 @@
 # ignore .idea in Pycharm
 .idea
 
+# files local
+settings_local.py
+
+# ignore bootstrap de teste
+/bootstrap*
 /base/static/bootstrap*
 
 # Byte-compiled / optimized / DLL files

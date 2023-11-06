@@ -2,11 +2,13 @@
 {% load static %}
 {% block head %}
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="{% static "cadastro/css/styles.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "global/css/global.styles.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "login/css/styles.css" %}">
+{#    <link rel="stylesheet" type="text/css" href="{% static "cadastro/css/styles.css" %}">#}
 {% endblock head %}
 {% block body %}
-<div class="cadastro-container">
-    <main>
+<div class="main">
+    <div class="login-container">
         <form action="" method="post">
             <header class="head-form">
                 <h1>Criar usuário</h1>
@@ -20,9 +22,16 @@
             <label for="in-passwd" class="lb-password">Senha:</label>
             <input id="in-passwd" type="password" placeholder="Insira sua senha"/>
             <br/>
-            <button type="submit">Entrar</button>
+            <button type="submit">Cadastrar</button>
 	        <button type="reset" name="btn_limpar">Limpar Dados</button>
         </form>
-    </main>
+    </div>
+    <div class="ad">
+        <div class="ad-img"></div>
+        <div class="ad-content">
+            <h1>Vai dar certo! </h1>
+        </div>
+    </div>
 </div>
-{% endblock body %}
+<div class="cadastro-container">
+</div>{% endblock body %}

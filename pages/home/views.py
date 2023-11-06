@@ -1,9 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def main(request):
-    a = [x for x in range(3)]
-    print(a)
+    a = [
+        0,
+        1,
+        2,
+    ]
     titulo = f"Site Bakery"
     context = {
         "title": titulo,
@@ -13,13 +16,15 @@ def main(request):
     return render(request, "index.html", context)
 
 
-def catalogo(request, id):
-    print("Catalogo de Pagina Web:", id)
+def catalogo(request, id_):
+    print("Catalogo de Pagina Web:", id_)
     context = {
         'title': "Site Bakery",
-        'id': id
+        'id_': id_
     }
-    return render(request, "catalogo.html", context)
+    if id_ != -1:
+        return render(request, "catalogo.html", context)
+    return redirect('home')
 
 
 def hello(request):

@@ -2,11 +2,33 @@
 {% load static %}
 {% block head %}
     <link rel="stylesheet" href="{% static 'global/css/global.styles.css' %}">
-    <link rel="stylesheet" href="{% static 'home/css/main.styles.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/styles.css' %}">
     <title>{{ title }}</title>
 {% endblock %}
 {% block body %}
-<nav>
-
+<nav class="nav">
+    <div class="logo"><a href="#"><img src="" alt=""></a></div>
+    <ul class="menu">
+        <li class="item"><a href="#">Criar Página</a></li>
+        <li class="item"><a href="#">Catálogo</a></li>
+        <li class="item"><a href="#">Outras Empresas</a></li>
+        <li class="item"><a href="#">Contato</a></li>
+        <li class="item"><a href="#">Login</a></li>
+    </ul>
 </nav>
+<main>
+    <header>
+        <h1>Crie sites com nosso factorypage</h1>
+        <h2>Crie sites gratuitamente</h2>
+    </header>
+    <section>
+        <div>
+            <div class="site-example"></div>
+            <div class="site-example"></div>
+            <div class="site-example"></div>
+        </div>
+    </section>
+</main>
+<footer>
+</footer>
 {% endblock %}

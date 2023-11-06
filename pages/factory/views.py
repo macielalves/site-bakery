@@ -27,4 +27,4 @@ def main(request):
         'title': titulo
     }
     # return HttpResponse('Voçê ainda não é usuário! <a href="/login">Fazer Cadastro</a>')
-    return redirect('home', )
+    return redirect('home')
