@@ -5,3 +5,4 @@
 * Breno Ruan 
 * Samuel Alves
 * Evandenilo Neto
+* Ryan Rodrigues
